@@ -20,10 +20,10 @@ async def on_ready():
 
 @client.event
 async def on_ready():
-    if dt_hr == 10:
-        print("bot:user ready == {0.user}".format(client))
-        channel = client.get_channel(newsChannelID)
-        await channel.send("checking news channel")
+    #if dt_hr == 10:
+    print("bot:user ready == {0.user}".format(client))
+    channel = client.get_channel(newsChannelID)
+    await channel.send("checking news channel")
 
 
 @client.event
